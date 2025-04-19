@@ -147,6 +147,7 @@ body .layout .navigation .section-2 {
   gap: 4px;
 }
 body .layout .navigation .section-2 .search {
+  cursor: pointer;
   width: 48px;
   height: 48px;
   border-radius: 8px;
@@ -162,6 +163,7 @@ body .layout .navigation .section-2 .search img {
   left: 14.66px;
 }
 body .layout .navigation .section-2 .export {
+  cursor: pointer;
   background: rgba(96, 58, 229, 0.1019607843);
   width: 120px;
   height: 48px;
@@ -187,6 +189,7 @@ body .layout .navigation .section-2 .export .text {
   color: #603ae5;
 }
 body .layout .navigation .section-2 .add-document {
+  cursor: pointer;
   background: rgba(96, 58, 229, 0.1019607843);
   width: 120px;
   height: 48px;
@@ -246,6 +249,7 @@ body .layout .navigation .section-2 .connect-div .connect .option {
   background: rgba(96, 58, 229, 0.1019607843);
 }
 body .layout .navigation .section-2 .notifications {
+  cursor: pointer;
   border: none;
   width: 48px;
   height: 48px;
@@ -266,6 +270,7 @@ body .layout .navigation .section-2 .notifications img {
   border-width: 1.5px;
 }
 body .layout .navigation .section-2 .settings {
+  cursor: pointer;
   border: none;
   width: 48px;
   height: 48px;
@@ -321,6 +326,7 @@ body .layout main .accounting .expenses-report {
   border-radius: 8px;
   background-color: #603ae5;
   color: white;
+  cursor: pointer;
   border: none;
 }
 body .layout main .accounting section {

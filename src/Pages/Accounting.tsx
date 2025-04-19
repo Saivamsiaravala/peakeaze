@@ -3,14 +3,19 @@ import { invoice } from "../assets";
 
 const links = [
   { id: 1, option: "All Documents", path: "all-documents" },
-  { id: 1, option: "Bills", path: "" },
-  { id: 1, option: "Receipts", path: "receipts" },
+  { id: 2, option: "Bills", path: "" },
+  { id: 3, option: "Receipts", path: "receipts" },
 ];
 
 const Accounting = () => {
   return (
     <div className="accounting">
-      <button className="expenses-report">Add to Expenses Report</button>
+      <button
+        onClick={() => console.log("clicked")}
+        className="expenses-report"
+      >
+        Add to Expenses Report
+      </button>
       <section>
         <div className="documents">
           <div className="links">

@@ -149,6 +149,8 @@ body {
         gap: 4px;
         // border: 2px solid black;
         .search {
+          cursor: pointer;
+
           width: 48px;
           height: 48px;
           border-radius: 8px;
@@ -165,6 +167,8 @@ body {
           }
         }
         .export {
+          cursor: pointer;
+
           background: #603ae51a;
           width: 120px;
           height: 48px;
@@ -190,6 +194,8 @@ body {
           }
         }
         .add-document {
+          cursor: pointer;
+
           background: #603ae51a;
           width: 120px;
           height: 48px;
@@ -253,6 +259,8 @@ body {
           }
         }
         .notifications {
+          cursor: pointer;
+
           border: none;
           width: 48px;
           height: 48px;
@@ -273,6 +281,8 @@ body {
           }
         }
         .settings {
+          cursor: pointer;
+
           border: none;
 
           width: 48px;
@@ -332,6 +342,7 @@ body {
           border-radius: 8px;
           background-color: #603ae5;
           color: white;
+          cursor: pointer;
           border: none;
         }
         section {
