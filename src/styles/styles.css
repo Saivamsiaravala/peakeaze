@@ -436,4 +436,174 @@ body .layout main .accounting section .document img {
   width: 730px;
   height: 861px;
   border-radius: 20px;
+}
+body .layout .quickbook {
+  width: 389px;
+  height: 2175px;
+  position: absolute;
+  left: 1291px;
+}
+body .layout .quickbook .container {
+  border: 2px solid black;
+  width: 341px;
+  height: 2118.6328125px;
+  position: relative;
+  top: 22px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+body .layout .quickbook .container .one {
+  width: 341px;
+  height: 134px;
+  border-width: 1px;
+  border: 1px solid #ececf2;
+}
+body .layout .quickbook .container .one .title {
+  width: 205px;
+  height: 62px;
+  position: relative;
+  top: 16px;
+  left: 16px;
+  gap: 8px;
+  display: flex;
+}
+body .layout .quickbook .container .one .title img {
+  width: 40px;
+  height: 40px;
+}
+body .layout .quickbook .container .one .title .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+body .layout .quickbook .container .one .title .block .block1 {
+  color: #1c1d21;
+  width: 80px;
+  height: 24px;
+  font-family: Hanken Grotesk;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  text-align: center;
+}
+body .layout .quickbook .container .one .title .block .block2 {
+  display: flex;
+  flex-direction: column;
+  font-family: Hanken Grotesk;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #8181a5;
+  align-items: start;
+}
+body .layout .quickbook .container .one .status-div {
+  color: #8181a5;
+}
+body .layout .quickbook .container .one .status-div .status {
+  width: 64;
+  height: 18;
+  position: absolute;
+  top: 16px;
+  left: 261px;
+  font-family: Hanken Grotesk;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  text-align: right;
+}
+body .layout .quickbook .container .one .status-div .author {
+  width: 72;
+  height: 18;
+  position: absolute;
+  top: 42px;
+  left: 253px;
+  font-family: Hanken Grotesk;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  text-align: right;
+}
+body .layout .quickbook .container .one .checks {
+  width: 309px;
+  height: 24px;
+  position: absolute;
+  top: 94px;
+  left: 16px;
+  gap: 18px;
+  display: flex;
+}
+body .layout .quickbook .container .one .checks .sync {
+  width: 145.5px;
+  height: 24px;
+  display: flex;
+  gap: 8px;
+  font-family: Hanken Grotesk;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+body .layout .quickbook .container .one .checks .save {
+  width: 145.5px;
+  height: 24px;
+  display: flex;
+  gap: 8px;
+  font-family: Hanken Grotesk;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+body .layout .quickbook .container .two {
+  width: 341px;
+  height: 250px;
+  gap: 12px;
+  border: 2px solid black;
+}
+body .layout .quickbook .container .three {
+  border: 2px solid black;
+  width: 341px;
+  height: 46px;
+  box-sizing: border-box;
+  gap: 10px;
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+}
+body .layout .quickbook .container .four {
+  border: 2px solid black;
+  width: 341px;
+  height: 56px;
+}
+body .layout .quickbook .container .five {
+  border: 2px solid black;
+  width: 341px;
+  height: 1078px;
+  gap: 24px;
+}
+body .layout .quickbook .container .six {
+  border: 2px solid black;
+  width: 341px;
+  height: 226px;
+  gap: 24px;
+}
+body .layout .quickbook .container .seven {
+  width: 341px;
+  height: 56px;
+  border: 2px solid black;
+}
+body .layout .quickbook .container .eight {
+  border: 2px solid black;
+  width: 341px;
+  height: 104px;
+  gap: 12px;
 }/*# sourceMappingURL=styles.css.map */

@@ -13,6 +13,7 @@ import settings from "./settings.png";
 import account from "./account.png";
 import invoice from "./invoice.png";
 import bill from "./bill.png";
+import quickbook from "./quickbook.png";
 export {
   acc,
   bank,
@@ -29,4 +30,5 @@ export {
   settings,
   invoice,
   bill,
+  quickbook,
 };
