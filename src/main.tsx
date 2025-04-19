@@ -20,7 +20,7 @@ import {
 } from "./Pages";
 import Bills from "./Components/Bills.tsx";
 import Documents from "./Components/Documents.tsx";
-import Receipts from "./Components/receipts.tsx";
+import Receipts from "./Components/Receipts.tsx";
 const router = createBrowserRouter(
   createRoutesFromElements([
     <Route path="/" element={<Layout />}>
