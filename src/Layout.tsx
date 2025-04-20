@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Components/Header";
 import QuickBook from "./Components/QuickBook";
+import Button from "./Components/Button";
 
 const Layout = () => {
   return (
@@ -9,7 +10,8 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
-      <QuickBook></QuickBook>
+      <QuickBook />
+      <Button />
     </div>
   );
 };

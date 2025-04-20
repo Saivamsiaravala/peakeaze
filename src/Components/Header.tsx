@@ -99,32 +99,55 @@ const Header = () => {
           <div className="data">Quickbook's Data</div>
         </section>
         <section className="section-2">
-          <div className="search">
+          <button
+            className="search"
+            onClick={() => window.alert("Button clicked")}
+          >
             <img src={search} alt="" />
-          </div>
-          <button className="export">
+          </button>
+          <button
+            className="export"
+            onClick={() => window.alert("Button clicked")}
+          >
             <div className="text">Export to excel</div>
           </button>
-          <button className="add-document">
+          <button
+            className="add-document"
+            onClick={() => window.alert("Button clicked")}
+          >
             <div className="text">Add document</div>
           </button>
 
-          <button className="connect-div">
+          <button
+            className="connect-div"
+            onClick={() => window.alert("Button clicked")}
+          >
             <select className="connect">
-              <option value="" className="option">
-                {" "}
+              <option value="" className="option" defaultChecked>
                 Connect
+              </option>
+              <option value="" className="option">
+                Option2
               </option>
             </select>
           </button>
 
-          <button className="notifications">
+          <button
+            className="notifications"
+            onClick={() => window.alert("Button clicked")}
+          >
             <img src={notifications} alt="" />
           </button>
-          <button className="settings">
+          <button
+            className="settings"
+            onClick={() => window.alert("Button clicked")}
+          >
             <img src={settings} alt="" />
           </button>
-          <button className="account">
+          <button
+            className="account"
+            onClick={() => window.alert("Button clicked")}
+          >
             <img src={account} alt="" />
           </button>
         </section>

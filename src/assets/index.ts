@@ -15,6 +15,9 @@ import invoice from "./invoice.png";
 import bill from "./bill.png";
 import quickbook from "./quickbook.png";
 import left from "./left.png";
+import nodata from "./nodata.png";
+import chat from "./chat.png";
+import underConstruction from "./underConstruction.png";
 export {
   acc,
   bank,
@@ -33,4 +36,7 @@ export {
   bill,
   quickbook,
   left,
+  nodata,
+  chat,
+  underConstruction,
 };

@@ -3,6 +3,7 @@ import { left, quickbook } from "../assets";
 
 const QuickBook = () => {
   const [showComments, setShowComments] = useState(true);
+  const [leftEnabled, setleftEnabled] = useState(true);
   return (
     <div className="quickbook">
       <section className="container">
@@ -25,11 +26,11 @@ const QuickBook = () => {
           <div className="checks">
             <div className="sync">
               <input type="checkbox" defaultChecked id="sync" />
-              <label>Auto-sync</label>
+              <label htmlFor="sync">Auto-sync</label>
             </div>
             <div className="save">
               <input type="checkbox" defaultChecked id="save" />
-              <label>Save Config</label>{" "}
+              <label htmlFor="save">Save Config</label>{" "}
             </div>
           </div>
         </section>
@@ -60,26 +61,48 @@ const QuickBook = () => {
               </div>
             </div>
           </div>
-          <div className="block3">
+          <button
+            className="block3"
+            onClick={() => window.alert("Button clicked")}
+          >
             <div>Add {showComments ? <>Comment</> : <>Query</>}</div>
-          </div>
+          </button>
         </section>
-        <button className="three">
+        <button
+          className="three"
+          onClick={() => window.alert("Button clicked")}
+        >
           <div>View Line Items</div>
         </button>
         <section className="four">
-          <button className="left">
+          <button
+            className="left"
+            onClick={() => window.alert("Button clicked")}
+          >
             <img src={left} />
           </button>
           <div className="title">Payment Details</div>
-          <button className="right">
+          <button
+            className="right"
+            onClick={() => window.alert("Button clicked")}
+          >
             <img src={left} />
           </button>
         </section>
         <section className="five">
           <div className="title">Payment Details</div>
           <div className="details">
-            <div className="data">
+            <div className="radio">
+              <label>
+                Paid
+                <input type="radio" name="status" defaultChecked />
+              </label>
+              <label>
+                Unpaid
+                <input type="radio" name="status" />
+              </label>
+            </div>
+            <div className="data one">
               <div className="label">Bill Number</div>
               <input
                 type="text"
@@ -121,11 +144,23 @@ const QuickBook = () => {
             </div>{" "}
             <div className="data">
               <div className="label">Payment mode</div>
-              <select className="input"></select>
-            </div>{" "}
+              <select className="input" defaultValue="">
+                <option value="" disabled>
+                  Select Payment Mode
+                </option>
+                <option value="Card">Card</option>
+                <option value="UPI">UPI</option>
+              </select>
+            </div>
             <div className="data">
               <div className="label">Currency</div>
-              <select className="input"></select>
+              <select className="input" defaultValue="">
+                <option value="" disabled>
+                  Select Currency
+                </option>
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+              </select>
             </div>{" "}
             <div className="data">
               <div className="label">Bank Transaction Ref</div>
@@ -177,9 +212,55 @@ const QuickBook = () => {
             </div>
           </div>
         </section>
-        <section className="six"></section>
-        <section className="seven"></section>
-        <section className="eight"></section>
+        <section className="six">
+          <div className="title">Description</div>
+          <div className="options">
+            <div className="radio">
+              <div className="item">Line item</div>
+              <div className="buttons">
+                <label htmlFor="" className="label">
+                  <input type="radio" name="item" defaultChecked />
+                  Single
+                </label>
+                <label htmlFor="" className="label">
+                  <input type="radio" name="item" />
+                  Multiple
+                </label>
+              </div>
+            </div>
+            <div className="description">
+              <div className="title">Description</div>
+              <input className="input" placeholder="Enter Description" />
+            </div>
+          </div>
+        </section>
+        <section className="seven">
+          <button className="left" onClick={() => setleftEnabled(true)}>
+            <img src={left} alt="" />
+          </button>
+          <div className="centre">
+            <div className={leftEnabled ? "active one" : "one"}></div>
+            <div className={!leftEnabled ? "active two" : "two"}></div>
+          </div>
+          <button className="right" onClick={() => setleftEnabled(false)}>
+            <img src={left} alt="" />
+          </button>
+        </section>
+        <section className="eight">
+          <button
+            className="save"
+            onClick={() => window.alert("Button clicked")}
+          >
+            <div>Save</div>
+          </button>
+          <div>
+            <select className="options">
+              <option value="publish">Publish</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+        </section>
       </section>
     </div>
   );

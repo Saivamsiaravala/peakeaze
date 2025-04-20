@@ -11,7 +11,7 @@ const Accounting = () => {
   return (
     <div className="accounting">
       <button
-        onClick={() => console.log("clicked")}
+        onClick={() => window.alert("Button clicked")}
         className="expenses-report"
       >
         Add to Expenses Report
