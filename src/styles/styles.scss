@@ -72,7 +72,6 @@ body {
       }
     }
     .navigation {
-      // border: 2px solid black;
       width: 1207px;
       height: 84px;
       left: 84px;
@@ -82,7 +81,6 @@ body {
       align-items: center;
       position: absolute;
       .section-1 {
-        // border: 2px solid black;
         width: 371.75px;
         height: 40px;
         position: relative;
@@ -171,6 +169,7 @@ body {
 
           background: #603ae51a;
           width: 120px;
+          min-width: fit-content;
           height: 48px;
           gap: 10px;
           border-radius: 8px;
@@ -462,8 +461,6 @@ body {
       width: 389px;
       height: 2175px;
       position: absolute;
-      // border: 2px solid black;
-
       left: 1291px;
       .container {
         border: 2px solid black;
@@ -586,11 +583,105 @@ body {
         .two {
           width: 341px;
           height: 250px;
+          display: flex;
+          flex-direction: column;
           gap: 12px;
-          border: 2px solid black;
+          .links {
+            width: 341px;
+            height: 35.784061431884766px;
+            gap: 4px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+
+            .btn {
+              cursor: pointer;
+              width: 170px;
+              height: 35.784061431884766px;
+              border: none;
+              color: #8181a5;
+              font-family: Hanken Grotesk;
+              font-weight: 700;
+              font-size: 12.52px;
+              line-height: 18.79px;
+              letter-spacing: 0px;
+              text-align: center;
+              background-color: #f5f5fa;
+            }
+            .active {
+              color: black;
+              width: 170;
+              height: 35.784061431884766;
+              border-radius: 7.16px;
+              border-width: 0.89px;
+              border: 1px thin black;
+            }
+          }
+          .block2 {
+            width: 341px;
+            height: 144.5833282470703px;
+            // border: 2px solid black;
+            position: inherit;
+            display: flex;
+            justify-content: center;
+
+            div {
+              width: 317.0862121582031px;
+              display: flex;
+              flex-direction: column;
+              height: 124.64080810546875px;
+              // gap: 0;
+              .title {
+                width: 110px;
+                height: 20px;
+                top: 9.97px;
+                font-family: Hanken Grotesk;
+                font-weight: 700;
+                font-size: 15.95px;
+                line-height: 19.14px;
+                letter-spacing: 0px;
+                color: #8181a5;
+              }
+              .input {
+                height: 21px;
+                flex: 1;
+                min-width: fit-content;
+                font-family: Hanken Grotesk;
+                font-weight: 400;
+                font-size: 13.96px;
+                line-height: 20.94px;
+                letter-spacing: 0px;
+                color: #8181a5;
+                border: none;
+                outline: none;
+                background-color: #f5f5fa;
+              }
+            }
+          }
+          .block3 {
+            width: 341px;
+            height: 46.26551055908203px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #8181a5;
+
+            div {
+              width: 91px;
+              height: 18px;
+              top: 14.03px;
+              left: 119.39px;
+              min-width: fit-content;
+              width: 91px;
+              height: 18px;
+              top: 14.03px;
+              left: 119.39px;
+            }
+          }
         }
         .three {
-          border: 2px solid black;
+          cursor: pointer;
+          min-width: fit-content;
           width: 341px;
           height: 46px;
           box-sizing: border-box;
@@ -600,17 +691,120 @@ body {
           padding-right: 24px;
           padding-bottom: 12px;
           padding-left: 24px;
+          background-color: #603ae5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          div {
+            width: 98px;
+            height: 18px;
+            font-family: Hanken Grotesk;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+          }
         }
         .four {
           border: 2px solid black;
           width: 341px;
           height: 56px;
+          // display: flex;
+          // justify-content: space-around;
+          // align-items: center;
+          .left {
+            width: 15px;
+            background: #e7e7ee;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            top: 16px;
+            left: 12px;
+            background-color: blue;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            img {
+              width: 15px;
+              height: 15px;
+            }
+          }
+          .title {
+            width: 123px;
+            height: 26px;
+            position: relative;
+            top: 16px;
+            left: 73px;
+          }
+          .right {
+            width: 24px;
+            height: 24px;
+            // position: inherit;
+            // top: 16px;
+            // right: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transform: rotate(180deg);
+
+            img {
+              width: 15px;
+              height: 15px;
+              // position: relative;
+              // top: 4.5px;
+              // left: 4.5px;
+            }
+          }
         }
         .five {
-          border: 2px solid black;
           width: 341px;
           height: 1078px;
+          display: flex;
+          flex-direction: column;
           gap: 24px;
+          .title {
+            width: 341px;
+            height: 24px;
+          }
+          .details {
+            width: 341px;
+            height: 1030px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            .data {
+              // border: 1px solid black;
+              color: #8181a5;
+              width: 341px;
+              height: 59px;
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+
+              .label {
+                font-family: Hanken Grotesk;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0px;
+              }
+              .input {
+                border: none;
+                outline: none;
+                font-family: Hanken Grotesk;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+                color: #8181a5;
+                letter-spacing: 0px;
+              }
+            }
+          }
         }
         .six {
           border: 2px solid black;

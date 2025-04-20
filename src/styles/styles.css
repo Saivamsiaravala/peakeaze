@@ -166,6 +166,8 @@ body .layout .navigation .section-2 .export {
   cursor: pointer;
   background: rgba(96, 58, 229, 0.1019607843);
   width: 120px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   height: 48px;
   gap: 10px;
   border-radius: 8px;
@@ -564,11 +566,103 @@ body .layout .quickbook .container .one .checks .save {
 body .layout .quickbook .container .two {
   width: 341px;
   height: 250px;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
-  border: 2px solid black;
+}
+body .layout .quickbook .container .two .links {
+  width: 341px;
+  height: 35.7840614319px;
+  gap: 4px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+body .layout .quickbook .container .two .links .btn {
+  cursor: pointer;
+  width: 170px;
+  height: 35.7840614319px;
+  border: none;
+  color: #8181a5;
+  font-family: Hanken Grotesk;
+  font-weight: 700;
+  font-size: 12.52px;
+  line-height: 18.79px;
+  letter-spacing: 0px;
+  text-align: center;
+  background-color: #f5f5fa;
+}
+body .layout .quickbook .container .two .links .active {
+  color: black;
+  width: 170;
+  height: 35.7840614319;
+  border-radius: 7.16px;
+  border-width: 0.89px;
+  border: 1px thin black;
+}
+body .layout .quickbook .container .two .block2 {
+  width: 341px;
+  height: 144.5833282471px;
+  position: inherit;
+  display: flex;
+  justify-content: center;
+}
+body .layout .quickbook .container .two .block2 div {
+  width: 317.0862121582px;
+  display: flex;
+  flex-direction: column;
+  height: 124.6408081055px;
+}
+body .layout .quickbook .container .two .block2 div .title {
+  width: 110px;
+  height: 20px;
+  top: 9.97px;
+  font-family: Hanken Grotesk;
+  font-weight: 700;
+  font-size: 15.95px;
+  line-height: 19.14px;
+  letter-spacing: 0px;
+  color: #8181a5;
+}
+body .layout .quickbook .container .two .block2 div .input {
+  height: 21px;
+  flex: 1;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  font-family: Hanken Grotesk;
+  font-weight: 400;
+  font-size: 13.96px;
+  line-height: 20.94px;
+  letter-spacing: 0px;
+  color: #8181a5;
+  border: none;
+  outline: none;
+  background-color: #f5f5fa;
+}
+body .layout .quickbook .container .two .block3 {
+  width: 341px;
+  height: 46.2655105591px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8181a5;
+}
+body .layout .quickbook .container .two .block3 div {
+  width: 91px;
+  height: 18px;
+  top: 14.03px;
+  left: 119.39px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  width: 91px;
+  height: 18px;
+  top: 14.03px;
+  left: 119.39px;
 }
 body .layout .quickbook .container .three {
-  border: 2px solid black;
+  cursor: pointer;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   width: 341px;
   height: 46px;
   box-sizing: border-box;
@@ -578,17 +672,108 @@ body .layout .quickbook .container .three {
   padding-right: 24px;
   padding-bottom: 12px;
   padding-left: 24px;
+  background-color: #603ae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+body .layout .quickbook .container .three div {
+  width: 98px;
+  height: 18px;
+  font-family: Hanken Grotesk;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
 }
 body .layout .quickbook .container .four {
   border: 2px solid black;
   width: 341px;
   height: 56px;
 }
+body .layout .quickbook .container .four .left {
+  width: 15px;
+  background: #e7e7ee;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 16px;
+  left: 12px;
+  background-color: blue;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+body .layout .quickbook .container .four .left img {
+  width: 15px;
+  height: 15px;
+}
+body .layout .quickbook .container .four .title {
+  width: 123px;
+  height: 26px;
+  position: relative;
+  top: 16px;
+  left: 73px;
+}
+body .layout .quickbook .container .four .right {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+body .layout .quickbook .container .four .right img {
+  width: 15px;
+  height: 15px;
+}
 body .layout .quickbook .container .five {
-  border: 2px solid black;
   width: 341px;
   height: 1078px;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
+}
+body .layout .quickbook .container .five .title {
+  width: 341px;
+  height: 24px;
+}
+body .layout .quickbook .container .five .details {
+  width: 341px;
+  height: 1030px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+body .layout .quickbook .container .five .details .data {
+  color: #8181a5;
+  width: 341px;
+  height: 59px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+body .layout .quickbook .container .five .details .data .label {
+  font-family: Hanken Grotesk;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0px;
+}
+body .layout .quickbook .container .five .details .data .input {
+  border: none;
+  outline: none;
+  font-family: Hanken Grotesk;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #8181a5;
+  letter-spacing: 0px;
 }
 body .layout .quickbook .container .six {
   border: 2px solid black;

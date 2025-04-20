@@ -14,6 +14,7 @@ import account from "./account.png";
 import invoice from "./invoice.png";
 import bill from "./bill.png";
 import quickbook from "./quickbook.png";
+import left from "./left.png";
 export {
   acc,
   bank,
@@ -31,4 +32,5 @@ export {
   invoice,
   bill,
   quickbook,
+  left,
 };
