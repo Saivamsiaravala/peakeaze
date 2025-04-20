@@ -118,10 +118,7 @@ const Header = () => {
             <div className="text">Add document</div>
           </button>
 
-          <button
-            className="connect-div"
-            onClick={() => window.alert("Button clicked")}
-          >
+          <button className="connect-div">
             <select className="connect">
               <option value="" className="option" defaultChecked>
                 Connect
