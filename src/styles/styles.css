@@ -778,10 +778,28 @@ body .layout .quickbook .container .five {
   flex-direction: column;
   padding-bottom: 24px;
 }
-body .layout .quickbook .container .five .title {
+body .layout .quickbook .container .five .title-div {
   width: 341px;
   height: 24px;
   margin-bottom: 24px;
+  display: flex;
+}
+body .layout .quickbook .container .five .title-div .title {
+  width: 116px;
+  height: 24px;
+}
+body .layout .quickbook .container .five .title-div .display {
+  position: absolute;
+  right: 24px;
+  background: rgba(96, 58, 229, 0.1019607843);
+  border: none;
+  cursor: pointer;
+}
+body .layout .quickbook .container .five .title-div .display img {
+  transform: rotate(270deg);
+}
+body .layout .quickbook .container .five .title-div .display .active {
+  transform: rotate(90deg);
 }
 body .layout .quickbook .container .five .details {
   width: 341px;
@@ -829,6 +847,16 @@ body .layout .quickbook .container .five .details .data .input::-moz-placeholder
 body .layout .quickbook .container .five .details .data .input::placeholder {
   color: #8181a5;
 }
+body .layout .quickbook .container .five .none {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: white;
+  width: 341px;
+  height: 1030px;
+  border: 2px solid black;
+  display: none;
+}
 body .layout .quickbook .container .six {
   width: 341px;
   height: 226px;
@@ -836,9 +864,27 @@ body .layout .quickbook .container .six {
   flex-direction: column;
   gap: 24px;
 }
-body .layout .quickbook .container .six .title {
+body .layout .quickbook .container .six .title-div {
   width: 341px;
   height: 24px;
+  display: flex;
+}
+body .layout .quickbook .container .six .title-div .title {
+  width: 83px;
+  height: 24px;
+}
+body .layout .quickbook .container .six .title-div .display {
+  position: absolute;
+  right: 24px;
+  background: rgba(96, 58, 229, 0.1019607843);
+  border: none;
+  cursor: pointer;
+}
+body .layout .quickbook .container .six .title-div .display img {
+  transform: rotate(270deg);
+}
+body .layout .quickbook .container .six .title-div .display .active {
+  transform: rotate(90deg);
 }
 body .layout .quickbook .container .six .options {
   width: 341px;
@@ -905,6 +951,11 @@ body .layout .quickbook .container .six .options .description .input::placeholde
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0px;
+}
+body .layout .quickbook .container .six .none {
+  display: none;
+  width: 341px;
+  height: 178px;
 }
 body .layout .quickbook .container .seven {
   width: 341px;

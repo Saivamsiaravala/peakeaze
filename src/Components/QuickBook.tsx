@@ -4,6 +4,8 @@ import { left, quickbook } from "../assets";
 const QuickBook = () => {
   const [showComments, setShowComments] = useState(true);
   const [leftEnabled, setleftEnabled] = useState(true);
+  const [showDetails, setShowDetails] = useState(true);
+  const [showDescription, setShowDescription] = useState(true);
   return (
     <div className="quickbook">
       <section className="container">
@@ -90,8 +92,16 @@ const QuickBook = () => {
           </button>
         </section>
         <section className="five">
-          <div className="title">Payment Details</div>
-          <div className="details">
+          <div className="title-div">
+            <div className="title">Payment Details</div>
+            <button
+              className="display"
+              onClick={() => setShowDetails(!showDetails)}
+            >
+              <img src={left} alt="" className={showDetails ? "active" : ""} />
+            </button>
+          </div>
+          <div className={showDetails ? "details" : "none"}>
             <div className="radio">
               <label>
                 Paid
@@ -213,8 +223,20 @@ const QuickBook = () => {
           </div>
         </section>
         <section className="six">
-          <div className="title">Description</div>
-          <div className="options">
+          <div className="title-div">
+            <div className="title">Description</div>
+            <button
+              className="display"
+              onClick={() => setShowDescription(!showDescription)}
+            >
+              <img
+                src={left}
+                alt=""
+                className={showDescription ? "active" : ""}
+              />
+            </button>
+          </div>
+          <div className={showDescription ? "options" : "none"}>
             <div className="radio">
               <div className="item">Line item</div>
               <div className="buttons">

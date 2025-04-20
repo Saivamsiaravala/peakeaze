@@ -799,10 +799,30 @@ body {
           // gap: 24px;
           padding-bottom: 24px;
           // border: 2px solid black;
-          .title {
+          .title-div {
             width: 341px;
             height: 24px;
             margin-bottom: 24px;
+            display: flex;
+            .title {
+              width: 116px;
+              height: 24px;
+            }
+            .display {
+              // display: flex;
+              // justify-self: end;
+              position: absolute;
+              right: 24px;
+              background: #603ae51a;
+              border: none;
+              cursor: pointer;
+              img {
+                transform: rotate(270deg);
+              }
+              .active {
+                transform: rotate(90deg);
+              }
+            }
           }
           .details {
             width: 341px;
@@ -851,6 +871,16 @@ body {
               }
             }
           }
+          .none {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            background-color: white;
+            width: 341px;
+            height: 1030px;
+            border: 2px solid black;
+            display: none;
+          }
         }
         .six {
           width: 341px;
@@ -858,9 +888,29 @@ body {
           display: flex;
           flex-direction: column;
           gap: 24px;
-          .title {
+          .title-div {
             width: 341px;
             height: 24px;
+            display: flex;
+            .title {
+              width: 83px;
+              height: 24px;
+            }
+            .display {
+              // display: flex;
+              // justify-self: end;
+              position: absolute;
+              right: 24px;
+              background: #603ae51a;
+              border: none;
+              cursor: pointer;
+              img {
+                transform: rotate(270deg);
+              }
+              .active {
+                transform: rotate(90deg);
+              }
+            }
           }
           .options {
             width: 341px;
@@ -922,6 +972,11 @@ body {
                 }
               }
             }
+          }
+          .none {
+            display: none;
+            width: 341px;
+            height: 178px;
           }
         }
         .seven {
