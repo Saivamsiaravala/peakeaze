@@ -1,5 +1,15 @@
+import { underConstruction } from "../assets";
+
 const Contacts = () => {
-  return <div>Contacts</div>;
+  return (
+    <div className="page">
+      <div className="title">Contacts</div>
+      <div className="desc">Under Construction</div>
+      <div className="image">
+        <img src={underConstruction} alt="" />
+      </div>
+    </div>
+  );
 };
 
 export default Contacts;

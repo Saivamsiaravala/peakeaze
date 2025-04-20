@@ -466,6 +466,27 @@ body .layout main .accounting section .document img {
   height: 861px;
   border-radius: 20px;
 }
+body .layout main .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #8181a5;
+}
+body .layout main .page .title {
+  text-align: center;
+  font-size: 30px;
+}
+body .layout main .page .desc {
+  font-weight: 700;
+  font-size: 25px;
+}
+body .layout main .page .image img {
+  height: 500px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
 body .layout .quickbook {
   background-color: white;
   width: 389px;
